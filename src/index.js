@@ -9,8 +9,7 @@ import "tachyons";
 import { createLogger } from 'redux-logger';
 import  ThunkMiddleware  from 'redux-thunk';
 import { searchRobots, requestRobots } from './reducers';
-import registerServiceWorker from 'react-service-worker';
-
+import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
 const logger = createLogger();
 
@@ -30,7 +29,7 @@ ReactDOM.render(
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
 // Learn more about service workers: https://cra.link/PWA
-registerServiceWorker.register();
+serviceWorkerRegistration.register();
 
 
 // If you want to start measuring performance in your app, pass a function
