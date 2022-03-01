@@ -6,12 +6,12 @@ import {createStore, applyMiddleware, combineReducers} from 'redux';
 import App from './containers/App';
 import reportWebVitals from './reportWebVitals';
 import "tachyons";
-import { createLogger } from 'redux-logger';
+// import { createLogger } from 'redux-logger';
 import  ThunkMiddleware  from 'redux-thunk';
 import { searchRobots, requestRobots } from './reducers';
 import * as serviceWorkerRegistration from './serviceWorkerRegistration';
 
-const logger = createLogger();
+// const logger = createLogger();
 
 const rootReducer = combineReducers({searchRobots,requestRobots})
 
